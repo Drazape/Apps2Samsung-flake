@@ -1,5 +1,17 @@
 {
   "nodes": {
+    "apps2samsung": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-1/VI7l8SE0Ydqs0/O051ogG6bwf1KLv2oeaSkzzvpCo=",
+        "type": "file",
+        "url": "https://github.com/Apps2Samsung/Apps2Samsung/releases/download/v2.7.9/Apps2Samsung-v2.7.9-linux-x64.deb"
+      },
+      "original": {
+        "type": "file",
+        "url": "https://github.com/Apps2Samsung/Apps2Samsung/releases/download/v2.7.9/Apps2Samsung-v2.7.9-linux-x64.deb"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": "nixpkgs-lib"
@@ -18,25 +30,13 @@
         "type": "github"
       }
     },
-    "mtsync": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-2QJmT0Chwml8XvqoPUsTmIj1Y1ObkYULy8KyIDwhm+Q=",
-        "type": "file",
-        "url": "https://github.com/gavindi/MtSync/releases/download/0.9.17/mtsync_0.9.17_ubuntu26.04_x86_64.deb"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/gavindi/MtSync/releases/download/0.9.17/mtsync_0.9.17_ubuntu26.04_x86_64.deb"
-      }
-    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1789012029,
-        "narHash": "sha256-1CBkBf+Nhggykzlx0jvXrj5rk20btl+tK8Fa8Ml/BL4=",
+        "lastModified": 1789264731,
+        "narHash": "sha256-llGJbC0CcU8DfROr6mZjRJgMLQd/SKwfpzxJH/2lHO4=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d5dfd8e6716dde34398bc14bc87c10dece9c8c68",
+        "rev": "02f5696b0e6097e589076d886b317b83ff0437d7",
         "type": "github"
       },
       "original": {
@@ -63,8 +63,8 @@
     },
     "root": {
       "inputs": {
+        "apps2samsung": "apps2samsung",
         "flake-parts": "flake-parts",
-        "mtsync": "mtsync",
         "nixpkgs": "nixpkgs"
       }
     }
